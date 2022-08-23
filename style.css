@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display";
+    text-shadow: 0.3px 0.3px;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+body {
+    background:url(/images/pattern-background-mobile.svg) no-repeat top;
+    background-size: 125%;
+    background-color: hsl(225, 100%, 94%);
+}
+main {
+    background-color: white;
+    max-width: 350px;
+    margin: 50px auto;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+img.hero {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+h1 {
+    margin: 20px auto;
+    font-weight: 900;
+    font-size: 22px;
+    color: hsl(223, 47%, 23%);
+}
+.description {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.plans {
+    display: flex;
+    justify-content: center;
+    margin: 35px auto;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px;
+    box-sizing: content-box;
+}
+.plans div {
+    width: 30%;
+}
+.music-icon {
+    position: relative;
+    right: 20px;
+}
+.plan-description {
+    position: relative;
+    top: 5px;
+    right: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+.plan-description span {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.change-plan {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+button {
+    display: block;
+    margin:  20px auto;
+    padding: 15px 65px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 5px 15px hsl(225, 100%, 98%);
+}
+.cancel-order {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+.change-plan:hover {
+    color: hsl(224, 23%, 55%);
+}
+button:hover {
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        background:url(/images/pattern-background-desktop.svg) no-repeat top;
+        background-size: 100%;
+        background-color: hsl(225, 100%, 94%);
+    }
+    main {
+        margin: 100px auto;
+    }    
+    .mobile-description {
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background:url(/images/pattern-background-mobile.svg) no-repeat top;
+        background-size: 125%;
+        background-color: hsl(225, 100%, 94%);
+    }
+    main {
+        max-width: 350px;
+        margin: 50px auto;
+    }
+    .desktop-description {
+        display: none;
+    }     
+    .mobile-description {
+        display: contents;
+    }
+}
+    
